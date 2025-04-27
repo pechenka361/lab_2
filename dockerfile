@@ -6,11 +6,11 @@ WORKDIR /code
 
 RUN apt update && apt install -y wget && apt clean cache
 
-COPY flask_restplus/requirements.txt /code/requirements.txt
+COPY flask_app/requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY flask_restplus/ /code
+COPY flask_app/ /code
 
 EXPOSE 5001
 
