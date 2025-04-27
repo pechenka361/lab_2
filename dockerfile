@@ -12,6 +12,6 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY flask_restplus/ /code
 
-EXPOSE 5000
+EXPOSE 4999
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:4999", "main:app"]
