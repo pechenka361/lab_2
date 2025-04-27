@@ -72,6 +72,6 @@ class MakeArrayClass(Resource):
         array = [random()*(args['maxval'])+args['minval'] for i in range(args['len'])]
         return {"len": args["len"], "array": array}
 
-app.run(port=4999)
+app.run(port=50001)
 
 
