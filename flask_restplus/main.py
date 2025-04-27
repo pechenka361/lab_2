@@ -10,7 +10,7 @@ api = Api(app=app,
         version='1.0',
         title='API Title',
         description='API Description',
-        doc='/apidocs/')
+        doc='/')
 name_space = api.namespace('main', description='Main APIs')
 
 @name_space.route('/')
