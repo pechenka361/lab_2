@@ -14,4 +14,4 @@ COPY flask_restplus/ /code
 
 EXPOSE 5000
 
-CMD ["python3" "main.py"]
+CMD ["python" "main.py"]
