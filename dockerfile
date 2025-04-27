@@ -14,4 +14,4 @@ COPY flask_restplus/ /code
 
 EXPOSE 5000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
+CMD ["python3" "main.py"]
