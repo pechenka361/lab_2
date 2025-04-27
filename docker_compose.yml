@@ -9,4 +9,4 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - 5002:5002
+      - 5000:5000
