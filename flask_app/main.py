@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from model import Car, get_car_model, post_car_model, base_car_model
 from parttmpl import templ
 
-DATABASE_URL = "postgresql://postgres:OIyPyiqQtlXykdnpwGHeAYzpYUnrPtsr@switchback.proxy.rlwy.net:15718/railway"
+DATABASE_URL = "postgresql://postgres:OIyPyiqQtlXykdnpwGHeAYzpYUnrPtsr@postgres.railway.internal:5432/railway"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
