@@ -16,7 +16,7 @@ api = Api(app=app,
         title='auto market',
         doc='/')
 
-app.register_blueprint(templ, url_prefix='/templ')
+# app.register_blueprint(templ, url_prefix='/templ')
 
 get_model = get_car_model(api)
 post_model = post_car_model(api)

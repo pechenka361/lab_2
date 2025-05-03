@@ -29,9 +29,9 @@ def get_car_model(api):
     cars_list_model = api.model('CarsList', {
     'Cars': fields.List(fields.Nested(car_model), description='Список автомобилей'),
     'Total_cars': fields.Integer(required=True, description='Количество автомобилей'),
-    'Year': fields.Raw(required=True, description='Количество автомобилей'),
-    'Price': fields.Raw(required=True, description='Количество автомобилей'),
-    'Mileage': fields.Raw(required=True, description='Количество автомобилей'),
+    'Year': fields.Raw(required=True, description='Среднее, минимальное и максимальное значение года выпуска'),
+    'Price': fields.Raw(required=True, description='Среднее, минимальное и максимальное значение цены'),
+    'Mileage': fields.Raw(required=True, description='Среднее, минимальное и максимальное значение пробега'),
     })
     return cars_list_model
 
