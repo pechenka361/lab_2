@@ -1,10 +1,8 @@
-from flask import Flask, Blueprint, request
-from flask_restx import Api, Resource, fields, reqparse
-from random import random
+from flask import Flask, request
+from flask_restx import Api, Resource
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model import Car, get_car_model, post_car_model, base_car_model
-from parttmpl import templ
 
 DATABASE_URL = "postgresql://postgres:OIyPyiqQtlXykdnpwGHeAYzpYUnrPtsr@postgres.railway.internal:5432/railway"
 engine = create_engine(DATABASE_URL)
@@ -16,7 +14,6 @@ api = Api(app=app,
         title='auto market',
         doc='/')
 
-# app.register_blueprint(templ, url_prefix='/templ')
 
 get_model = get_car_model(api)
 post_model = post_car_model(api)
